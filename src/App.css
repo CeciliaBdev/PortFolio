@@ -160,7 +160,13 @@ h2::before {
 .contact {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 400px;
+}
+.contact input {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid red;
 }
 .contact input,
 .contact textarea,
@@ -168,6 +174,14 @@ h2::before {
   margin: 5px;
   padding: 2px;
 }
+.contact textarea {
+  height: 60px;
+  border: 1px solid red;
+  border-radius: 5px;
+}
 .contact button {
   font-size: 18px;
+  border: 1px solid red;
+  background-color: rgba(209, 157, 157, 0.6);
+  border-radius: 5px;
 }
