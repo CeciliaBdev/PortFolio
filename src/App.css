@@ -132,13 +132,13 @@ h2::before {
 .card {
   /* border: 2px solid black; */
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
-  border-radius: 25px;
+  border-radius: 10px;
   height: 100%;
   transition: transform 330ms ease-in-out;
 }
 .card img {
   object-fit: cover;
-  border-radius: 25px;
+  border-radius: 10px;
   height: 100%;
 }
 .title_card {
@@ -146,7 +146,7 @@ h2::before {
   padding: 5px;
 }
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-10px);
   box-shadow: 0 0 15px rgba(19, 11, 11, 0.6);
 }
 /* section contact */
@@ -166,7 +166,7 @@ h2::before {
   background: transparent;
   border: none;
   outline: none;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #e5e5e5;
 }
 .contact input,
 .contact textarea,
@@ -175,13 +175,48 @@ h2::before {
   padding: 2px;
 }
 .contact textarea {
-  height: 60px;
-  border: 1px solid red;
+  height: 150px;
+  border: 1px solid #e5e5e5;
   border-radius: 5px;
 }
 .contact button {
   font-size: 18px;
-  border: 1px solid red;
-  background-color: rgba(209, 157, 157, 0.6);
-  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  /* background-color: rgba(209, 157, 157, 0.6); */
+  border-radius: 15px;
+  width: 40%;
+  padding: 10px;
+  margin: 20px auto;
+  transition: all 0.6s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.contact button:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #b3b0b0;
+  transition: all 0.6s;
+  z-index: -1;
+}
+.contact button:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e5e5e5;
+  transition: all 0.5s;
+  z-index: -2;
+}
+.contact button:hover {
+  cursor: pointer;
+}
+.contact button:hover:before {
+  width: 100%;
 }
