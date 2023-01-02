@@ -1,38 +1,155 @@
-.App {
-  text-align: center;
+* {
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  position: fixed;
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-right: 100px;
+  font-size: 20px;
+}
+.nav-item {
+  list-style-type: none;
+  cursor: pointer;
+}
+.nav-item:hover {
+  border-bottom: 3px solid red;
+}
+/* section a propos */
+.apropos {
+  /* background-color: aquamarine; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.apropos_content {
+  /* border: 1px solid black; */
+  border-radius: 25px;
+  width: 80vw;
+  height: 60%;
+  display: flex;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
+}
+.title {
+  /* border: 1px solid red; */
+  width: 66%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: center;
+  padding-left: 40px;
+}
+.title h1,
+.title h2 {
+  font-family: 'Poppins';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title h2 {
+  font-size: 3vw;
+  color: white;
+  -webkit-text-stroke: 0.1vw rgb(255, 0, 55);
+  text-transform: uppercase;
+  position: relative;
 }
+h2::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  color: rgb(255, 0, 55);
+  -webkit-text-stroke: 0vw black;
+  /* border-right: 2px solid rgb(255, 0, 55); */
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+  white-space: nowrap;
+}
+@keyframes animate {
+  0%,
+  100% {
+    width: 0;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  80% {
+    width: 100%;
   }
 }
+.avatar {
+  /* border: 1px solid blue; */
+  width: 34%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* section projets */
+.projets {
+  /* background-color: rgb(245, 241, 241); */
+  height: 100vh;
+  width: 100%;
+}
+.content_projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 50px;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: repeat(2, 250px);
+  justify-content: center;
+  align-content: center;
+  height: 60vh;
+  gap: 50px;
+}
+.card_wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.card {
+  border: 2px solid black;
+  border-radius: 25px;
+  height: 100%;
+  transition: transform 330ms ease-in-out;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card img {
+  object-fit: cover;
+  border-radius: 25px;
+  height: 100%;
+}
+.title_card {
+  font-size: 20px;
+  padding: 5px;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(19, 11, 11, 0.6);
+}
+/* section contact */
+.contact {
+  /* background-color: rgb(156, 156, 154); */
+  height: 100vh;
 }
