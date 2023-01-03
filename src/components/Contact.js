@@ -8,7 +8,7 @@ function Contact() {
         method="post"
         name="contact"
         data-netlify="true"
-        onSubmit="submit"
+        // onSubmit="submit"
       >
         <input type="hidden" name="form-name" value="contact" />
         <label>Nom: </label>
