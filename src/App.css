@@ -16,7 +16,6 @@
 }
 .navbar ul {
   display: flex;
-  flex-direction: row;
   gap: 50px;
   margin-right: 100px;
   font-size: 20px;
@@ -27,6 +26,13 @@
 }
 .nav-item:hover {
   border-bottom: 3px solid red;
+}
+.navbar_burger {
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: black;
+  background-color: transparent;
 }
 /* section a propos */
 .apropos {
@@ -322,6 +328,13 @@ h2::before {
   .wrapper {
     width: 69vw;
   }
+  .navbar {
+    justify-content: center;
+  }
+  .navbar ul {
+    margin: 0;
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 425px) {
   .apropos_content {
@@ -351,6 +364,12 @@ h2::before {
     grid-template-columns: repeat(2, 150px);
     grid-template-rows: 4;
     gap: 20px 30px;
+  }
+  .wrap_tools {
+    height: 70vh;
+  }
+  .navbar ul {
+    gap: 20px;
   }
 }
 @media screen and (max-width: 375px) {
