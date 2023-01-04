@@ -26,12 +26,17 @@ function Contact() {
       </form>
 
       <div className="footer">
-        <a href="https://github.com/CeciliaBdev" target="_blank">
+        <a
+          href="https://github.com/CeciliaBdev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={footer_github} alt="github" width="50px" />
         </a>
         <a
           href="https://www.linkedin.com/in/c%C3%A9cilia-bernard-849221252/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img src={footer_linkedin} alt="github" width="30px" />
         </a>
