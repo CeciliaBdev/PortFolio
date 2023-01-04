@@ -13,7 +13,6 @@ function Projets() {
   return (
     <div className="projets" id="projets">
       <div className="content_projects">
-        <h2>Mes réalisations</h2>
         <div className="content_grid_arrow">
           <i
             className="fas fa-chevron-left prevButton"
