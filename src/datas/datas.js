@@ -6,8 +6,14 @@ import lespetitsplats from '../assets/lespetitsplats.png'
 import kasa from '../assets/kasa.png'
 import sportsee from '../assets/sportsee.png'
 import argentbank from '../assets/argentbank.png'
+import mygallery from '../assets/mygallery.png'
 
 export const Links = [
+  {
+    title: 'My gallery',
+    cover: mygallery,
+    site: 'https://my-gallery-two.vercel.app/',
+  },
   {
     id: '1',
     title: 'Booki',
