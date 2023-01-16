@@ -134,6 +134,7 @@ h2::before {
   height: 600px;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  padding-left:4px;
 }
 .wrapper::-webkit-scrollbar {
   display: none;

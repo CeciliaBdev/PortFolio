@@ -7,12 +7,18 @@ import kasa from '../assets/kasa.png'
 import sportsee from '../assets/sportsee.png'
 import argentbank from '../assets/argentbank.png'
 import mygallery from '../assets/mygallery.png'
+import users_management from '../assets/crud_user_management.png'
 
 export const Links = [
   {
     title: 'My gallery',
     cover: mygallery,
     site: 'https://my-gallery-two.vercel.app/',
+  },
+  {
+    title: 'Users Management',
+    cover: users_management,
+    site: 'https://users-management-alpha.vercel.app/all',
   },
   {
     title: 'Booki',
