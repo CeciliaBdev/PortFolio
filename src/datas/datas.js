@@ -8,8 +8,14 @@ import sportsee from '../assets/sportsee.png'
 import argentbank from '../assets/argentbank.png'
 import mygallery from '../assets/mygallery.png'
 import users_management from '../assets/crud_user_management.png'
+import naturally from '../assets/naturally.png'
 
 export const Links = [
+  {
+    title: `Natur'Ally`,
+    cover: naturally,
+    site: 'https://natur-ally.vercel.app/',
+  },
   {
     title: 'My gallery',
     cover: mygallery,
