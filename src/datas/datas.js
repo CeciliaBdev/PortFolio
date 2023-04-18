@@ -9,8 +9,14 @@ import argentbank from '../assets/argentbank.png'
 import mygallery from '../assets/mygallery.png'
 import users_management from '../assets/crud_user_management.png'
 import naturally from '../assets/naturally.png'
+import lesclesdutregor from '../assets/lesclesdutregor.png'
 
 export const Links = [
+  {
+    title: `Les clés du Trégor`,
+    cover: lesclesdutregor,
+    site: 'https://les-cles-du-tregor.vercel.app/',
+  },
   {
     title: `Natur'Ally`,
     cover: naturally,
